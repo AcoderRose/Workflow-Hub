@@ -170,16 +170,18 @@ function handleDrop(event, ui) {
 }
 
 function cardState(cardDate) {
+  //Dayjs objects for current date, and the task date.
   const today = dayjs();
   const date1 = dayjs(cardDate);
-  const dateDiff = date1.diff(today, "days");
+  //Difference between task date and current date.
+  const dateDiff = today.diff(date1, "d", true);
 
   if (dateDiff > 1) {
-    return "overdue";
-  } else if (dateDiff >= 0) {
-    return "due";
+    return "pastdue";
+  } else if (dateDiff > -2 && dateDiff < 1) {
+    return "duesoon";
   } else {
-    return "current";
+    return "comingup";
   }
 }
 

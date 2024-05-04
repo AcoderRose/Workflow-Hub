@@ -14,3 +14,14 @@ body {
 .task-card:hover {
   cursor: grab;
 }
+
+/* Added CSS styling to show how urgent a task is anything thats not completed by due date will be red(past due date), yellow(due soon on current day or within two days of due date), white (any task due three days out or more)*/
+
+.duesoon {
+  background-color: rgb(242, 203, 35);
+}
+
+.pastdue {
+  background-color: rgb(235, 26, 24);
+  color: white;
+}

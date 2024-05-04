@@ -64,16 +64,16 @@
             </div>
             <div class="modal-body">
               <form class="container row" id="form">
-                <div class="mb-3 row">
-                  <label for="task-title" class="col-form-label">Title</label>
+                <div class="mb-3 col-6">
+                  <label for="task-title" class="label-form">Title</label>
                   <input type="text" class="form-control col" id="task-title" />
                 </div>
-                <div class="row">
-                  <label for="task-date" class="col-form-label">Date</label>
+                <div class="col-6">
+                  <label for="task-date" class="label-form">Date</label>
                   <input type="text" class="form-control col" id="task-date" />
                 </div>
                 <div class="mb-3">
-                  <label for="task-description" class="form-label">Task</label>
+                  <label for="task-description" class="label-form">Task</label>
                   <textarea
                     class="form-control"
                     id="task-description"
@@ -112,7 +112,7 @@
               <h2 class="card-title mb-1">To Do</h2>
             </div>
             <div class="card-body bg-light">
-              <div id="cards-todo" class="drag-box"></div>
+              <div id="cards-todo"></div>
             </div>
           </div>
         </div>
@@ -122,7 +122,7 @@
               <h2 class="card-title mb-1">In Progress</h2>
             </div>
             <div class="card-body bg-light">
-              <div id="cards-in-progress" class="drag-box"></div>
+              <div id="cards-in-progress"></div>
             </div>
           </div>
         </div>
@@ -132,7 +132,7 @@
               <h2 class="card-title mb-1">Done</h2>
             </div>
             <div class="card-body bg-light">
-              <div id="cards-done" class="drag-box"></div>
+              <div id="cards-done"></div>
             </div>
           </div>
         </div>

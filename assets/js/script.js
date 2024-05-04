@@ -24,7 +24,7 @@ function createTaskCard(task) {
   const $cardTextEl = $("<p>").attr("class", "card-text");
   const $cardButtonEl = $("<a>")
     .attr("href", "#")
-    .attr("class", "btn btn-primary")
+    .attr("class", "btn btn-primary deleteBtn")
     .text("Delete")
     .attr("id", task.id);
 
@@ -187,6 +187,9 @@ function cardState(cardDate) {
 $(document).ready(function () {
   // Event listener executes handleAddTask function through the submit button.
   $("#saveBtn").on("click", handleAddTask);
+
+  // Event listener in container is activated by delete button is clicked.
+  $(".container").on("click", ".deleteBtn", handleDeleteTask);
 
   // Datepicker added to modal.
   $("#task-date").datepicker({

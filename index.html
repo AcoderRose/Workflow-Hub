@@ -24,18 +24,17 @@
     />
 
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Task Board</title>
+    <title>Workflow Hub</title>
   </head>
 
   <body>
     <header class="p-4 mb-4 text-center border-bottom border-5">
-      <h1 class="display-3">Task Board</h1>
+      <h1 class="display-3">Workflow Hub</h1>
       <p class="lead">A simple Kanban board for task management</p>
     </header>
     <div class="container">
       <div class="text-center mb-5">
         <button
-          id="button"
           class="btn btn-success"
           data-bs-toggle="modal"
           data-bs-target="#formModal"
@@ -64,26 +63,20 @@
               ></button>
             </div>
             <div class="modal-body">
-              <form class="container">
+              <form class="container row" id="form">
                 <div class="mb-3 row">
-                  <label for="title-of-task" class="col-form-label"
-                    >Title</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control col"
-                    id="title-of-task"
-                  />
+                  <label for="task-title" class="col-form-label">Title</label>
+                  <input type="text" class="form-control col" id="task-title" />
                 </div>
                 <div class="row">
                   <label for="task-date" class="col-form-label">Date</label>
                   <input type="text" class="form-control col" id="task-date" />
                 </div>
                 <div class="mb-3">
-                  <label for="task-text" class="form-label">Task</label>
+                  <label for="task-description" class="form-label">Task</label>
                   <textarea
                     class="form-control"
-                    id="task-text"
+                    id="task-description"
                     rows="3"
                   ></textarea>
                 </div>
@@ -119,7 +112,7 @@
               <h2 class="card-title mb-1">To Do</h2>
             </div>
             <div class="card-body bg-light">
-              <div id="todo-cards"></div>
+              <div id="cards-todo" class="drag-box"></div>
             </div>
           </div>
         </div>
@@ -129,7 +122,7 @@
               <h2 class="card-title mb-1">In Progress</h2>
             </div>
             <div class="card-body bg-light">
-              <div id="in-progress-cards"></div>
+              <div id="cards-in-progress" class="drag-box"></div>
             </div>
           </div>
         </div>
@@ -139,7 +132,7 @@
               <h2 class="card-title mb-1">Done</h2>
             </div>
             <div class="card-body bg-light">
-              <div id="done-cards"></div>
+              <div id="cards-done" class="drag-box"></div>
             </div>
           </div>
         </div>

@@ -23,3 +23,28 @@
 - Any task not completed by due date will produce a red card meaning task is past due date.
 - Any task that is due on current day or within two days of due date will produce a yellow card meaning task is due soon.
 - Any task that is due three days out or more will produce a white card meaning task is coming up in the future.
+
+## Technologies Used
+
+- HTML/CSS for styling and structure.
+- JavaScript for the interactive elements and manipulation of local storage.
+- Bootstrap for its widely-used toolkit that expedites the creation of responsive and visually appealing interfaces. It ensures a polished appearance and seamless functionality across various devices.
+- jQuery UI for utilization of its drag-and-drop functionality, enabling users to effortlessly relocate tasks within the task board interface.
+
+## Screenshot
+
+![Screenshot of Workflow Hub Landing Page]()
+
+## Usage
+
+[Link to Deployed Website](https://acoderrose.github.io/Workflow-Hub/)
+
+[Link to GitHub repository](https://github.com/AcoderRose/Workflow-Hub)
+
+## Collaborators
+
+[Jordan Gonzales](https://github.com/JordanGWiz)
+
+[Kaila Ronquillo](https://github.com/girlnotfound)
+
+[Ryan Petersen](https://github.com/RyanPetersen-89)

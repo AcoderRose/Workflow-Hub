@@ -52,6 +52,11 @@ function renderTaskList() {
   // Local Storage saved tasks are grabbed.
   taskList = JSON.parse(localStorage.getItem("tasks")) || [];
 
+  // // Arranges the taskList array in ascending order based on the task dates, with the soonest date appearing first in each column.
+  taskList.sort(function (a, b) {
+    return dayjs(a.date).diff(dayjs(b.date));
+  });
+
   // Makes sure the cards that are already there are removed from all the lanes.
   $toDoEl.empty();
   $inProgressEl.empty();

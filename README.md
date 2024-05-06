@@ -33,7 +33,7 @@
 
 ## Screenshot
 
-![Screenshot of Workflow Hub Landing Page]()
+![Screenshot of Workflow Hub Landing Page](./images/screenshot-of-website.png)
 
 ## Usage
 
